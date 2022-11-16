@@ -82,6 +82,7 @@ section {
 .register:hover {
     transform: scale(1.2);
     background-color: #84a2ee;
+    cursor: pointer;
 }
 
 #landingSection {
