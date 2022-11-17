@@ -280,10 +280,22 @@ section {
     align-items: center;
     text-align: center;
 }
+#reminderSection div {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    min-width: 50%
+}
+#reminderSection div a {
+    margin: 20px;
+}
 
 @media (max-width: 450px) {
     #reminderSection {
         padding-left: 30px;
         padding-right: 30px;
+    }
+    #reminderSection div {
+        flex-direction: column;
     }
 }
