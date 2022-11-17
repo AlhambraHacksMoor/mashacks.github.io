@@ -39,6 +39,7 @@ nav>div a {
     text-decoration: none;
     width: fit-content;
 }
+
 @media (max-width: 600px) {
     #navLinks a:not(#registerNav):not(#codeofconductNav) {
         display: none;
@@ -55,7 +56,7 @@ nav>div a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: xx-large;
     font-weight: bold;
     filter: drop-shadow(2px 2px 7px #00000033);
 }
@@ -69,6 +70,7 @@ section {
     font-size: 120px;
     filter: drop-shadow(5px 5px 5px #7c601a)
 }
+
 @media (max-width: 600px) {
     #title {
         font-size: 17vw;
@@ -104,6 +106,7 @@ section {
     align-items: center;
     justify-content: center;
 }
+
 @media (max-width: 450px) {
     #landingSection {
         min-height: 90vh;
@@ -128,11 +131,11 @@ section {
 
 #splashSection>div {
     display: flex;
-    width: 70%;
+    width: 90%;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin: 50px;
+    margin: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -141,6 +144,13 @@ section {
     font-size: xx-large;
     line-height: 1.5em;
     color: #ffffff
+}
+
+@media (max-width: 450px) {
+    #splashSection>div p {
+        font-size: large;
+        line-height: normal;
+    }
 }
 
 #FAQSection {
@@ -168,6 +178,7 @@ section {
     margin: 50px;
     text-align: left;
 }
+
 @media (max-width: 400px) {
     #FAQGrid {
         grid-template-columns: 1fr;
@@ -177,7 +188,7 @@ section {
 .FAQcontainer {
     background-color: #ebdbc5;
     border-radius: 10px;
-    padding: 30px;
+    padding: 10px;
     line-height: 1.5;
     filter: drop-shadow(2px 2px 5px #0000005b);
 }
@@ -216,36 +227,60 @@ section {
 }
 
 #TeamGrid {
-    width: 90%;
+    width: auto;
     display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 30px;
+    margin: 50px;
     text-align: left;
 }
 
-.Teamcontainer {
-    background-color: #ebdbc5;
-    border-radius: 10px;
-    overflow: hidden;
-    filter: drop-shadow(2px 2px 5px #0000005b);
-}
+
+
+.Teamcontainer {}
 
 .Teamcontainer div {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .Teamcontainer img {
     width: 100%;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 5px #0000005b);
+}
+
+@media (max-width: 450px) {
+    #TeamGrid {
+        grid-template-columns: 1fr;
+        margin: 5px;
+    }
+
+    .Teamcontainer {
+        display: flex;
+        flex-direction: row;
+        height: 120px;
+    }
+
+    .Teamcontainer div {
+        text-align: left;
+    }
+
+    .Teamcontainer img {
+        height: 100%;
+        width: auto;
+    }
 }
 
 #reminderSection {
     background-color: #e4b641;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
+
 @media (max-width: 450px) {
     #reminderSection {
         padding-left: 30px;
