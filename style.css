@@ -201,10 +201,39 @@ section {
 }
 
 #scheduleSection {
-    background-color: #e4b641;
+    background-color: #8eacda;
     text-align: center;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+#scheduleSection>div h1 {
+    color: #ffffff
+}
+
+#scheduleSection div {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+#scheduleSection div img {
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    #scheduleSection div {
+        width: 100%;
+    }
+
+    #scheduleSection div img {
+        width: 150%;
+    }
 }
 
 #teamSection {
@@ -224,6 +253,7 @@ section {
 
 #teamSection>div>h1 {
     color: #ffffff;
+    text-align: center;
 }
 
 #TeamGrid {
@@ -234,10 +264,6 @@ section {
     margin: 50px;
     text-align: left;
 }
-
-
-
-.Teamcontainer {}
 
 .Teamcontainer div {
     padding-left: 15px;
@@ -252,7 +278,7 @@ section {
     filter: drop-shadow(2px 2px 5px #0000005b);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
     #TeamGrid {
         grid-template-columns: 1fr;
         margin: 5px;
