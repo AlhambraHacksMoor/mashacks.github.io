@@ -173,7 +173,7 @@ section {
 
 #FAQGrid {
     width: 80%;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin: 50px;
@@ -201,13 +201,23 @@ section {
     align-items: center;
 }
 
+#prizeSection > div{
+    width: 90%;
+}
+
 #PrizeGrid {
-    width: 85%;
-    display: inline-grid;
+    width: 90%;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    margin: 50px;
+    gap: 30px;
+    margin: auto;
     text-align: left;
+}
+
+@media (max-width: 600px) {
+    #PrizeGrid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .Prizecontainer {
@@ -216,6 +226,7 @@ section {
     padding: 10px;
     line-height: 1.5;
     filter: drop-shadow(2px 2px 5px #0000005b);
+    font-size: large;
 }
 
 #scheduleSection {
