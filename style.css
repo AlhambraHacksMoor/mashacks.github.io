@@ -71,9 +71,19 @@ section {
     filter: drop-shadow(5px 5px 5px #7c601a);
 }
 
+#TitleOptionsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 @media (max-width: 600px) {
     #title {
         font-size: 17vw;
+    }
+
+    #TitleOptionsDiv {
+        flex-direction: column;
     }
 }
 
@@ -201,7 +211,7 @@ section {
     align-items: center;
 }
 
-#prizeSection > div{
+#prizeSection>div {
     width: 90%;
 }
 
