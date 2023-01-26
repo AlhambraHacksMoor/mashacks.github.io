@@ -252,15 +252,12 @@ section {
 }
 
 #scheduleSection {
-    background-color: #8eacda;
+    background-color: #fadc91;
+    background: linear-gradient(#fadc91, rgb(195, 206, 255));
     text-align: center;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-#scheduleSection>div h1 {
-    color: #ffffff
 }
 
 #scheduleSection div {
@@ -274,7 +271,7 @@ section {
 }
 
 #scheduleSection div img {
-    width: 100%;
+    width: 80%;
 }
 
 @media (max-width: 650px) {
@@ -283,7 +280,7 @@ section {
     }
 
     #scheduleSection div img {
-        width: 150%;
+        width: 100%;
     }
 }
 
@@ -298,7 +295,7 @@ section {
 #sponsorGrid {
     width: auto;
     display: inline-grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 600px));
     gap: 30px;
     margin: 50px;
     text-align: left;
