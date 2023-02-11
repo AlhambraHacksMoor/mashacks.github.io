@@ -126,7 +126,8 @@ section {
 
 @media (max-width: 650px) {
     #landingButtons {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -145,6 +146,20 @@ section {
     height: 100%;
     text-align: center;
     margin-bottom: 50px;
+}
+
+#submissionSection {
+    justify-content: center;
+    background-color: #e4b641;
+}
+
+#submissionSection>div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #splashSection {
