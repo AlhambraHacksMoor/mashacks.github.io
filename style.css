@@ -516,6 +516,7 @@ section {
 
 .slideButton:hover {
     background-color: #7797ef;
+    cursor: pointer;
 }
 
 .project {
