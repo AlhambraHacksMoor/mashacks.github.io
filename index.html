@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AlhambraHacksMoor</title>
     <link rel="icon" type="image/png" href="assets/designs/favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 
@@ -59,7 +61,7 @@
             </div>
         </div>
     </section>
-    <section id="submissionSection">
+    <!-- <section id="submissionSection">
         <div>
             <h2><span style="font-weight: bold;">Theme: </span>Education</h2>
             <a class="register" style="margin: 20px; z-index: 1;"
@@ -72,7 +74,7 @@
                     href="https://forms.gle/bT4MbYd3rYjeDUu26"
                     target="_blank">Submit</a>
         </div>
-    </section>
+    </section> -->
     <section id="splashSection">
         <div>
             <p>AlhambraHacksMoor is a free 5 hour hackathon aimed at students from Alhambra High School. No previous
@@ -80,6 +82,132 @@
             <br>
             <p>We want to ensure that all students are able to explore and mature a desire in the field of computer
                 science by providing opportunities for software and career development</p>
+        </div>
+    </section>
+    <section id="resultSection">
+        <div>
+            <h1 style="text-align: center;">24 particiants and 13 projects submitted!</h1>
+            <div id="resultBox">
+                <div class="resultProject">
+                    <h2>Best Overall Project</h2>
+                    <div class="project">
+                        <div class="slides">
+                            <div class="slideContainer">
+                                <img src="assets/results/best overall/chess1.png">
+                                <img src="assets/results/best overall/chess2.png">
+                                <img src="assets/results/best overall/chess3.png">
+                                <img src="assets/results/best overall/chess4.png">
+                            </div>
+                            <div class="slideButtons">
+                                <button onclick="slideChange(this, -1)" class="slideButton">&lt</button>
+                                <button onclick="slideChange(this, 1)" class="slideButton">&gt</button>
+                            </div>
+                        </div>
+                        <div class="projectDetails">
+                            <h2>Chess</h2>
+                            <p>Chess, created by Stanley Zhou, is an interactive recreation of Chess. When asked abut
+                                what inspired the creation of this project, Stanley said that he received the idea from
+                                a friend. Some difficulties that were encountered involved staring at a line of code,
+                                wondering why it wouldn't work. Thankfully, by asking a friend for an outside
+                                perspective, Stanley was able to solve the issue. When asked about what he would change
+                                about the project if given the opportunity, he mentioned changing the themes,
+                                background, and code.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="resultProject">
+                    <h2>Best Beginner Team</h2>
+                    <div class="project">
+                        <div class="slides">
+                            <div class="slideContainer">
+                                <img src="assets/results/best beginner team/mustard1.png">
+                                <img src="assets/results/best beginner team/mustard2.png">
+                                <img src="assets/results/best beginner team/mustard3.png">
+                                <img src="assets/results/best beginner team/mustard4.png">
+                            </div>
+                            <div class="slideButtons">
+                                <button onclick="slideChange(this, -1)" class="slideButton">&lt</button>
+                                <button onclick="slideChange(this, 1)" class="slideButton">&gt</button>
+                            </div>
+                        </div>
+                        <div class="projectDetails">
+                            <h2>Ketchup and Mustard Math Tutoring</h2>
+                            <p>
+                                Inspired by the theme of education. Ketchup and Mustard Math Tutoring is an app designed
+                                to practice math, created by Ben Xu, Joshua Mahmoudiani, Zi Han Mi, and Isabelle Li. The
+                                app offers 4 different levels of difficulty, ranging from elementary math to calculus.
+                                When asked about some of the difficulties they faced, they mentioned that they couldn't
+                                pinpoint where the issues were in their code. By keeping calm, they were able to fix
+                                issues of the calculus answer and percentage tracker not working. They hope to continue
+                                to add the multiplication of derivatives to their program.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pictureSection">
+        <div>
+            <div class="slides">
+                <div><button onclick="slideChange(this, -1)" class="slideButton" id="pictureSlide">&lt</button></div>
+                <div class="slideContainer">
+                    <img src="assets/results/general photos/gen1.JPG">
+                    <img src="assets/results/general photos/gen2.JPG">
+                    <img src="assets/results/general photos/gen3.JPG">
+                    <img src="assets/results/general photos/gen4.JPG">
+                    <img src="assets/results/general photos/gen5.JPG">
+                    <img src="assets/results/general photos/gen6.JPG">
+                    <img src="assets/results/general photos/gen7.JPG">
+                    <img src="assets/results/general photos/gen8.JPG">
+                    <img src="assets/results/general photos/gen9.JPG">
+                    <img src="assets/results/general photos/gen10.JPG">
+                </div>
+                <div><button onclick="slideChange(this, 1)" class="slideButton">&gt</button></div>
+            </div>
+        </div>
+    </section>
+    <section id="prizeSection">
+        <div>
+            <h1>Awards</h1>
+            <br>
+            <div id="PrizeGrid">
+                <div class="Prizecontainer">
+                    <h2>Best Overall</h2>
+                    <ul>
+                        <li>Best Overall Trophy</li>
+                        <li>Gaming Headset</li>
+                        <li>500 piece Hallmark Keepsake Collection Puzzle</li>
+                        <li>Prada Pencil Case</li>
+                        <li>USB Flash Drive</li>
+                        <li>Rubber Ducky</li>
+                        <li>Includes all participant awards</li>
+                        <li>Items may be subject to change</li>
+                    </ul>
+                </div>
+                <div class="Prizecontainer">
+                    <h2>Best Beginner Team</h2>
+                    <ul>
+                        <li>Best Beginner Team Trophy</li>
+                        <li>USB Flash Drive</li>
+                        <li>Rubber Ducky</li>
+                        <li>Includes all participant awards</li>
+                        <li>Items may be subject to change</li>
+                    </ul>
+                </div>
+                <div class="Prizecontainer">
+                    <h2>Participation</h2>
+                    <ul>
+                        <li>T-Shirt</li>
+                        <li>Stickers</li>
+                        <li>Pens</li>
+                        <li>Items may be subject to change</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
     </section>
     <section id="FAQSection">
@@ -127,48 +255,6 @@
                     <p>You can email us at info@alhambrahacksmoor.org</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="prizeSection">
-        <div>
-            <h1>Awards</h1>
-            <br>
-            <div id="PrizeGrid">
-                <div class="Prizecontainer">
-                    <h2>Best Overall</h2>
-                    <ul>
-                        <li>Best Overall Trophy</li>
-                        <li>Gaming Headset</li>
-                        <li>500 piece Hallmark Keepsake Collection Puzzle</li>
-                        <li>Prada Pencil Case</li>
-                        <li>USB Flash Drive</li>
-                        <li>Rubber Ducky</li>
-                        <li>Includes all participant awards</li>
-                        <li>Items may be subject to change</li>
-                    </ul>
-                </div>
-                <div class="Prizecontainer">
-                    <h2>Best Beginner Team</h2>
-                    <ul>
-                        <li>Best Beginner Team Trophy</li>
-                        <li>USB Flash Drive</li>
-                        <li>Rubber Ducky</li>
-                        <li>Includes all participant awards</li>
-                        <li>Items may be subject to change</li>
-                    </ul>
-                </div>
-                <div class="Prizecontainer">
-                    <h2>Participation</h2>
-                    <ul>
-                        <li>T-Shirt</li>
-                        <li>Stickers</li>
-                        <li>Pens</li>
-                        <li>Items may be subject to change</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <br>
         </div>
     </section>
     <section id="scheduleSection">

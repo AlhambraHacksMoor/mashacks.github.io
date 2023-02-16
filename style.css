@@ -128,6 +128,7 @@ section {
     #landingButtons {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 1vw;
     }
 }
 
@@ -153,7 +154,7 @@ section {
     background-color: #e4b641;
 }
 
-#submissionSection>div{
+#submissionSection>div {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -189,6 +190,25 @@ section {
         font-size: large;
         line-height: normal;
     }
+}
+
+#resultSection {
+    background-color: #e4b641;
+}
+
+#resultSection>div {
+    width: 100%;
+}
+
+#resultBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#resultBox>div>h2 {
+    text-align: center;
 }
 
 #FAQSection {
@@ -426,6 +446,165 @@ section {
     }
 
     #reminderSection div {
+        flex-direction: column;
+    }
+}
+
+.resultProject {
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    transition: all 75ms ease-out;
+    border-radius: 15px;
+    background-color: #e4be5f;
+}
+
+.resultProject:hover {
+    scale: 1.07;
+    background-color: #f4d27d;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 3px; */
+}
+
+.slideContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    width: 460px;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0.317);
+    padding: 10px;
+}
+
+.slideContainer img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.slideButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.slideButton {
+    margin: 10px;
+    border-radius: 3px;
+    border-style: none;
+    background-color: #5c80e4;
+    height: 40px;
+    width: 40px;
+    transition: transform 100ms ease-in, background-color 100ms ease-in;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideButton:hover {
+    background-color: #7797ef;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectDetails {
+    max-width: 500px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.projectDetails p {
+    line-height: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.1rem;
+}
+
+#pictureSection {
+    background-color: #688beb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#pictureSection .slides {
+    flex-direction: row;
+}
+
+#pictureSection .slideContainer {
+    width: 800px;
+    height: 100%;
+}
+
+#pictureSection img {
+    border-radius: 7px;
+    max-width: auto;
+    max-height: auto;
+}
+
+#pictureSection .slideButton {
+    background-color: rgba(255, 255, 255, 0.317);
+}
+
+#pictureSection .slideButton:hover {
+    background-color: rgba(255, 255, 255, 0.526);
+}
+
+@media (max-width: 450px) {
+    #pictureSection {
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #pictureSection .slides {
+        width: 100vw;
+    }
+
+    #pictureSection .slideContainer {
+        padding: 0;
+    }
+
+    #pictureSection .slideButton {
+        display: none;
+    }
+
+    #pictureSection img {
+        border-radius: 0;
+    }
+
+    #resultBox {
+        flex-direction: column;
+    }
+
+    .resultProject {
+        width: 100%;
+        padding: 0;
+        pointer-events: none;
+    }
+
+    .slideContainer {
+        width: 100%;
+    }
+
+    .project {
         flex-direction: column;
     }
 }
