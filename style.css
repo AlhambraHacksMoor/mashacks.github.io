@@ -330,7 +330,7 @@ section {
 #sponsorGrid {
     width: auto;
     display: inline-grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 600px));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
     margin: 50px;
     text-align: left;
