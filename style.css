@@ -295,28 +295,12 @@ section {
     overflow: hidden;
 }
 
-#scheduleSection div {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-}
-
-#scheduleSection div img {
-    width: 80%;
-}
 
 @media (max-width: 650px) {
     #scheduleSection div {
         width: 100%;
     }
 
-    #scheduleSection div img {
-        width: 100%;
-    }
 }
 
 #sponsorSection {
