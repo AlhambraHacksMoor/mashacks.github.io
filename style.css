@@ -625,7 +625,7 @@ section {
 .scheduleContainer table {
     text-align: center;
     margin: 20px auto;
-    border-collapse: separate; /* Ensure borders are separated */
+    border-collapse: separate; 
 }
 
 .scheduleContainer td {
