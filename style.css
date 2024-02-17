@@ -635,11 +635,11 @@ section {
     letter-spacing: 0.8px;
   }
   
-  th {
+   .scheduleContainer th {
     border: 4px solid #8eacda;
   }
   
-  table {
+  .scheduleContainer table {
     text-align: center;
     margin: 20px auto;
   }
