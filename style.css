@@ -610,3 +610,53 @@ section {
         flex-direction: column;
     }
 }
+
+  .scheduleContainer h1 {
+    font-size: 36px;
+    padding: 10px;
+    color: #8eacda;
+    background-color: white;
+  }
+  
+  .scheduleContainer h2 {
+    font-size: 24px;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+  
+  .scheduleContainer h3 {
+    font-size: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+  }
+  
+  th {
+    border: 4px solid #8eacda;
+  }
+  
+  table {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  td {
+    border: 4px solid #8eacda;
+    width: 300px;
+  }
+  
+  .scheduleContainer {
+    max-width: 940px;
+    margin: 0 auto;
+    height: 800px;
+  }
+  
+  
+  .left {
+    width: 150px;
+  }
+  
