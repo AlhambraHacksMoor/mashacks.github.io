@@ -149,6 +149,10 @@ section {
     margin-bottom: 50px;
 }
 
+#landSection h1 {
+    filter: drop-shadow(5px 5px 5px #7c601a);
+}
+
 #submissionSection {
     justify-content: center;
     background-color: #e4b641;
