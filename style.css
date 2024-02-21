@@ -150,6 +150,7 @@ section {
 }
 
 #landSection>h2 {
+    font-weight: bold;
     filter: drop-shadow(5px 5px 5px #7c601a);
 }
 
