@@ -149,8 +149,7 @@ section {
     margin-bottom: 50px;
 }
 
-#landSection h2 {
-    font-weight: bold;
+#landingSection h2 {
     filter: drop-shadow(5px 5px 5px #7c601a);
 }
 
