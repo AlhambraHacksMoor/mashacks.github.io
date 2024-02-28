@@ -646,4 +646,56 @@ section {
     width: 150px;
 }
 
+#groupPictureSection {
+    background-color: #e4b641;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
 
+#groupPictureSection .slides {
+    flex-direction: row;
+}
+
+#groupPictureSection .slideContainer {
+    width: 800px;
+    height: 100%;
+}
+
+#groupPictureSection img {
+    border-radius: 7px;
+    max-width: auto;
+    max-height: auto;
+}
+
+#groupPictureSection .slideButton {
+    background-color: rgba(255, 255, 255, 0.317);
+}
+
+#groupPictureSection .slideButton:hover {
+    background-color: rgba(255, 255, 255, 0.526);
+}
+
+@media (max-width: 450px) {
+    #groupPictureSection {
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #groupPictureSection .slides {
+        width: 100vw;
+    }
+
+    #groupPictureSection .slideContainer {
+        padding: 0;
+    }
+
+    #groupPictureSection .slideButton {
+        display: none;
+    }
+
+    #groupPictureSection img {
+        border-radius: 0;
+    }
